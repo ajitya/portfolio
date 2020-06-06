@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM PORTFOLIO - CONTACT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="nav-drawer">
+       <input id="nav-input" type="checkbox" class="nav-unshown">
+       <label id="nav-open" for="nav-input"><span></span></label>
+       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+     <div id="nav-content">
+       <ul>
+         <li><a href="index.html">TOP</a></li>
+         <li><a href="web.html">WEB</a></li>
+         <li><a href="video.html">VIDEO</a></li>
+         <li><a href="design.html">DESIGN</a></li>
+         <li><a href="profile.html">PROFILE</a></li>
+         <li><a href="contact.html">CONTACT <i class="fas fa-ellipsis-h"></i></a></li>
+       </ul>
+     </div>
+     </div>
+    </header>
+
+      <h2 class="t_o_contents">CONTACT</h2>
+
+      <div class="contact_wrapper">
+        <ul>
+      <li class="contact_title">CONTACT</li>
+      <li>
+        <i class="far fa-envelope"></i>e-mail:<p><input id="copyTarget1" type="text" value="ayatakavs@gmail.com" readonly>
+          <button class="copy_button" onclick="copyToClipboard1()">Copy</button></p>
+      </li>
+      <li>
+        <i class="fab fa-youtube"></i>Youtube:<p><input id="copyTarget2" type="text" value="https://www.youtube.com/channel/UCl_amsbc1gRfKyLkdN56P5Q" readonly>
+          <button class="copy_button" onclick="copyToClipboard2()">Copy</button></p>
+      </li>
+      <li>
+        <i class="fab fa-twitter"></i>Twitter:<p><input id="copyTarget3" type="text" value="http://aaaaaaaaa.com" readonly>
+          <button class="copy_button" onclick="copyToClipboard3()">Copy</button></p>
+      </li>
+      </ul>
+      </div>
+          <script>
+              function copyToClipboard1() {
+                  var copyTarget = document.getElementById("copyTarget1");
+                  copyTarget.select();
+                  document.execCommand("Copy");
+                  alert("コピーできました！ : " + copyTarget.value);
+              }
+              function copyToClipboard2() {
+                  var copyTarget = document.getElementById("copyTarget2");
+                  copyTarget.select();
+                  document.execCommand("Copy");
+                  alert("コピーできました！ : " + copyTarget.value);
+              }
+              function copyToClipboard3() {
+                  var copyTarget = document.getElementById("copyTarget3");
+                  copyTarget.select();
+                  document.execCommand("Copy");
+                  alert("コピーできました！ : " + copyTarget.value);
+              }
+          </script>
+    </body>
+  </html>
