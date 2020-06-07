@@ -240,12 +240,12 @@ margin-right: 1rem;
 }
 .mobile_img{
   max-width: 200px;
+  height: 435px;
   object-fit: contain;
 }
 
 .mobile_img2{
   margin-left: 50px;
-  object-fit: contain;
 }
 
 .works_1_content{
@@ -296,7 +296,7 @@ margin-right: 1rem;
     margin: 0 auto;
   }
   .works_1_img{
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
   }
   .mobile_wrapper{
@@ -334,6 +334,8 @@ margin-right: 1rem;
   }
   .mobile_img{
     max-width: 100px;
+    height: 218px;
+
   }
   .works_1_content a img{
     float: right;
